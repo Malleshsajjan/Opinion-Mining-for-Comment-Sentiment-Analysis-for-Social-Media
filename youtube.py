@@ -79,7 +79,7 @@ def get_word_frequency(preprocessed_comments):
 
 
 def main(urll):
-    api_key = 'AIzaSyAsghIwYp0lPrRe6nT-TN8G2bmQ3CzsncA'
+    api_key = 'YOUTUBE_API_KEY'
     url = urll
     video_id = extract_video_id(url)
     print(video_id)
