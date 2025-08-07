@@ -47,9 +47,9 @@ def get_word_frequency(preprocessed_comments):
 def main(URL):
     # Create a Reddit instance with your app credentials
     reddit = praw.Reddit(
-        client_id="jjfi3QgyIrd7WpGkP3zQPA",
-        client_secret="-1-OdFADrw5aKKdbLLAyVuFcnpdN7Q",
-        user_agent="shaasar",
+        client_id="CLIENT_ID",// Get it through Reddit Account 
+        client_secret="CLIENT_SECRET"
+        user_agent="USER_NAME"
     )
 
     try:
