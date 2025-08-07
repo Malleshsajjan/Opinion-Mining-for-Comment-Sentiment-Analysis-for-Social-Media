@@ -43,7 +43,7 @@ def get_word_frequency(preprocessed_comments):
 
 def main(url):
     # Initialize the ApifyClient with your API token
-    client = ApifyClient("apify_api_Ycvtx0urqpIcDd0tdpWLH92iwObKj93IAATN")
+    client = ApifyClient("APIFY_API_KEY") # Get it through Apify account
 
     # Prepare the Actor input
     run_input = {
@@ -56,7 +56,7 @@ def main(url):
     run_input["directUrls"].append(url)
 
     # Run the Actor and wait for it to finish
-    run = client.actor("SbK00X0JYCPblD2wp").call(run_input=run_input)
+    run = client.actor("ACTOR_KEY").call(run_input=run_input) # Get it through Apify 
 
     # Fetch and print Actor results from the run's dataset (if there are any)
     data_list = []
